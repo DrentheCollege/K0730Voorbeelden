@@ -1,5 +1,5 @@
 #include "LedControl.h"
-int NRDEV = 8;
+int NRDEV = 4;
 int displayteller = 0;
 
 LedControl MyLedmatrix = LedControl(11, 13, 10, NRDEV); // DIN, CLK, CS, NRDEV
