@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns="http://www.w3.org/2000/svg"  height="85.015099" viewBox="0 0 7.8999998 68.012082" id="svg2" gorn="0" width="9.875" version="1.2">
+    <desc >
+        <referenceFile >ResistorNetwork_SIP_9pin_bb_v2pln.svg</referenceFile>
+    </desc>
+    <metadata  id="metadata35">
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <cc:Work rdf:about="" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">image/svg+xml</dc:format>
+                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+                <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"/>
+            </cc:Work>
+        </rdf:RDF>
+    </metadata>
+    <defs  id="defs33"/>
+    <g  transform="translate(-2.6696943e-7,2.76208)">
+        <g >
+            <g  id="g4" gorn="0.3.0.0">
+                <g  id="breadboard" gorn="0.3.0.0.0">
+                    <path  d="m -2.4152214e-8,0 l 0,43.775002 l 0.125000004152214,0 l 0,21.475001 l 7.77500042,0 l 0,-43.775002 l -0.125,0 L 7.7750004,0 L -2.4152214e-8,0 z M 3.8500002,2.7500001 a 1.13386,1.13386 0 0 1 1.1750001,1.1500001 a 1.1375001,1.1375001 0 0 1 -2.2750001,0 a 1.13386,1.13386 0 0 1 1.1,-1.1500001 z m 0,7.2000004 a 1.13386,1.13386 0 0 1 1.1750001,1.1500005 a 1.1375001,1.1375001 0 0 1 -2.2750001,0 a 1.13386,1.13386 0 0 1 1.1,-1.1500005 z m 0,7.2000005 a 1.13386,1.13386 0 0 1 1.1750001,1.15 a 1.1375001,1.1375001 0 0 1 -2.2750001,0 a 1.13386,1.13386 0 0 1 1.1,-1.15 z m 0,7.2 a 1.13386,1.13386 0 0 1 1.1750001,1.15 a 1.13386,1.13386 0 0 1 -0.225,0.675 a 1.13386,1.13386 0 0 1 -0.025,0.05 a 1.13386,1.13386 0 0 1 -0.05,0.025 a 1.13386,1.13386 0 0 1 -0.125,0.1 a 1.13386,1.13386 0 0 1 -1.7250001,-0.975 a 1.13386,1.13386 0 0 1 0.225,-0.675 a 1.13386,1.13386 0 0 1 0.025,-0.05 a 1.13386,1.13386 0 0 1 0.025,-0.025 a 1.13386,1.13386 0 0 1 0.075,-0.05 a 1.13386,1.13386 0 0 1 0.625,-0.225 z m 0,7.200001 a 1.13386,1.13386 0 0 1 1.1750001,1.15 a 1.13386,1.13386 0 0 1 -0.225,0.675 a 1.13386,1.13386 0 0 1 -0.025,0.05 a 1.13386,1.13386 0 0 1 -0.05,0.025 a 1.13386,1.13386 0 0 1 -0.125,0.1 a 1.13386,1.13386 0 0 1 -1.7250001,-0.975 a 1.13386,1.13386 0 0 1 0.225,-0.675 a 1.13386,1.13386 0 0 1 0.025,-0.05 a 1.13386,1.13386 0 0 1 0.025,-0.025 a 1.13386,1.13386 0 0 1 0.075,-0.05 a 1.13386,1.13386 0 0 1 0.625,-0.225 z m 0,7.2 a 1.13386,1.13386 0 0 1 1.1750001,1.15 a 1.13386,1.13386 0 0 1 -0.225,0.675 a 1.13386,1.13386 0 0 1 -0.025,0.05 a 1.13386,1.13386 0 0 1 -0.05,0.025 a 1.13386,1.13386 0 0 1 -0.125,0.1 a 1.13386,1.13386 0 0 1 -1.7250001,-0.975 a 1.13386,1.13386 0 0 1 0.225,-0.675 a 1.13386,1.13386 0 0 1 0.025,-0.05 a 1.13386,1.13386 0 0 1 0.025,-0.025 a 1.13386,1.13386 0 0 1 0.075,-0.05 a 1.13386,1.13386 0 0 1 0.625,-0.225 z m 0.025,7.1 a 1.13386,1.13386 0 0 1 1.2750001,1.125 a 1.1375001,1.1375001 0 0 1 -2.2750001,0 a 1.13386,1.13386 0 0 1 1,-1.125 z m 0,7.200001 a 1.13386,1.13386 0 0 1 1.2750001,1.125 a 1.1375001,1.1375001 0 0 1 -2.2750001,0 a 1.13386,1.13386 0 0 1 1,-1.125 z m 0,7.2 a 1.13386,1.13386 0 0 1 1.2750001,1.125 a 1.1375001,1.1375001 0 0 1 -2.2750001,0 a 1.13386,1.13386 0 0 1 1,-1.125 z" id="path7" gorn="0.3.0.0.0.0" style="fill:green"/>
+                    <path  d="m 2.03414,2.03414 l 3.70772,0 l 0,3.70772 l -3.70772,0 l 0,-8.50394 z m 0.72,1.85386 a 1.13386,1.13386 0 1 0 2.26772,0 a 1.13386,1.13386 0 1 0 -2.26772,0 z" fill-opacity="1" id="path10" gorn="0.3.0.0.0.1" fill="#f7bd13" stroke="none"/>
+                    <path  stroke-width="0.57599998" d="m 0.288,3.888 a 3.6,3.6 0 1 1 7.2,0" id="path17" gorn="0.3.0.0.0.2" fill="none" stroke="#f8f8f8"/>
+                    <path  stroke-width="0.57599998" d="m 7.488,61.271024 a 3.6,3.6 0 0 1 -7.2,0" id="path19" gorn="0.3.0.0.0.3" fill="none" stroke="#f8f8f8"/>
+                    <line  stroke-width="0.57599998" id="line21" gorn="0.3.0.0.0.4" style="stroke-linecap:round" y1="3.888" y2="7.4879999" x1="0.28799999" x2="0.28799999" class="other" stroke="#f8f8f8"/>
+                    <line  stroke-width="0.57599998" id="line23" gorn="0.3.0.0.0.5" style="stroke-linecap:round" y1="7.4879994" y2="61.565098" x1="0.28799999" x2="0.28799999" class="other" stroke="#f8f8f8"/>
+                    <line  stroke-width="0.57600003" id="line25" gorn="0.3.0.0.0.6" style="stroke-linecap:round" y1="61.43866" y2="7.4880004" x1="7.4879999" x2="7.4879999" class="other" stroke="#f8f8f8"/>
+                    <line  stroke-width="0.57599998" id="line27" gorn="0.3.0.0.0.7" style="stroke-linecap:round" y1="7.4879999" y2="3.888" x1="7.4879999" x2="7.4879999" class="other" stroke="#f8f8f8"/>
+                    <line  stroke-width="0.57599998" id="line29" gorn="0.3.0.0.0.8" style="stroke-linecap:round" y1="7.4879999" y2="7.4879999" x1="0.28799999" x2="7.4879999" class="other" stroke="#f8f8f8"/>
+                    <circle  r="1.49386" stroke-width="0.72000003" id="connector1pin" gorn="0.3.0.0.0.9" stroke-opacity="1" cx="3.888" cy="3.888" fill="none" stroke="#f7bd13"/>
+                    <circle  r="1.49386" stroke-width="0.72000003" id="connector2pin" gorn="0.3.0.0.0.10" stroke-opacity="1" cx="3.888" cy="11.088" fill="none" stroke="#f7bd13"/>
+                    <circle  r="1.49386" stroke-width="0.72000003" id="connector3pin" gorn="0.3.0.0.0.11" stroke-opacity="1" cx="3.888" cy="18.288" fill="none" stroke="#f7bd13"/>
+                    <circle  r="1.49386" stroke-width="0.72000003" id="connector4pin" gorn="0.3.0.0.0.12" stroke-opacity="1" cx="3.888" cy="25.488001" fill="none" stroke="#f7bd13"/>
+                    <circle  r="1.49386" stroke-width="0.72000003" id="connector5pin" gorn="0.3.0.0.0.13" stroke-opacity="1" cx="3.888" cy="32.688" fill="none" stroke="#f7bd13"/>
+                    <circle  r="1.49386" stroke-width="0.72000003" id="connector6pin" gorn="0.3.0.0.0.14" stroke-opacity="1" cx="3.888" cy="39.888" fill="none" stroke="#f7bd13"/>
+                    <g  transform="translate(0,14.400001)">
+                        <g >
+                            <circle  r="1.49386" stroke-width="0.72000003" id="connector7pin" gorn="0.3.0.0.0.15.0.0" stroke-opacity="1" cx="3.888" cy="32.688" fill="none" stroke="#f7bd13"/>
+                        </g>
+                    </g>
+                    <g  transform="translate(0,14.400001)">
+                        <g >
+                            <circle  r="1.49386" stroke-width="0.72000003" id="connector8pin" gorn="0.3.0.0.0.16.0.0" stroke-opacity="1" cx="3.888" cy="39.888" fill="none" stroke="#f7bd13"/>
+                        </g>
+                    </g>
+                    <g  transform="translate(0,21.594512)">
+                        <g >
+                            <circle  r="1.49386" stroke-width="0.72000003" id="connector9pin" gorn="0.3.0.0.0.17.0.0" stroke-opacity="1" cx="3.888" cy="39.888" fill="none" stroke="#f7bd13"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns="http://www.w3.org/2000/svg"  height="81.781982" viewBox="0 0 7.7759992 65.425589" id="svg5961" gorn="0" width="9.7199993" version="1.2">
+    <desc >
+        <referenceFile >ResistorNetwork_SIP_9pin_pcb_v2pln.svg</referenceFile>
+    </desc>
+    <metadata  id="metadata6028">
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <cc:Work rdf:about="" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">image/svg+xml</dc:format>
+                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+                <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"/>
+            </cc:Work>
+        </rdf:RDF>
+    </metadata>
+    <defs  id="defs6026"/>
+    <g  id="pcb" gorn="0.3">
+        <g  id="silkscreen" gorn="0.3.0">
+            <path  stroke-width="0.57599998" d="m 0.288,3.888 a 3.6,3.6 0 1 1 7.2,0" id="path6010" gorn="0.3.0.0" fill="none" stroke="#f0f0f0"/>
+            <path  stroke-width="0.57599998" d="m 7.488,61.537592 a 3.6,3.6 0 0 1 -7.2,0" id="path6012" gorn="0.3.0.1" fill="none" stroke="#f0f0f0"/>
+            <line  stroke-width="0.57599998" id="line6014" gorn="0.3.0.2" style="stroke-linecap:round" y1="3.888" y2="7.4879999" x1="0.28799999" x2="0.28799999" class="other" stroke="#f0f0f0"/>
+            <line  stroke-width="0.57599998" id="line6016" gorn="0.3.0.3" style="stroke-linecap:round" y1="7.4879999" y2="61.677902" x1="0.28799999" x2="0.28799999" class="other" stroke="#f0f0f0"/>
+            <line  stroke-width="0.57599998" id="line6018" gorn="0.3.0.4" style="stroke-linecap:round" y1="61.677902" y2="7.4879999" x1="7.4879999" x2="7.4879999" class="other" stroke="#f0f0f0"/>
+            <line  stroke-width="0.57599998" id="line6020" gorn="0.3.0.5" style="stroke-linecap:round" y1="7.4879999" y2="3.888" x1="7.4879999" x2="7.4879999" class="other" stroke="#f0f0f0"/>
+            <line  stroke-width="0.57599998" id="line6022" gorn="0.3.0.6" style="stroke-linecap:round" y1="7.4879999" y2="7.4879999" x1="0.28799999" x2="7.4879999" class="other" stroke="#f0f0f0"/>
+        </g>
+        <g  transform="translate(-2.9112165e-7,0.18989919)">
+            <g >
+                <g  id="copper0" gorn="0.3.1.0.0">
+                    <g  id="copper1" gorn="0.3.1.0.0.0">
+                        <path  d="m 2.03414,2.03414 l 3.70772,0 l 0,3.70772 l -3.70772,0 l 0,-3.70772 z m 0.72,1.85386 a 1.13386,1.13386 0 1 0 2.26772,0 a 1.13386,1.13386 0 1 0 -2.26772,0 z" id="path5979" gorn="0.3.1.0.0.0.0" fill="#f7bd13" stroke="none"/>
+                        <circle  r="1.49386" stroke-width="0.72000003" id="connector1pin" gorn="0.3.1.0.0.0.1" cx="3.888" cy="3.888" fill="none" stroke="#f7bd13"/>
+                        <circle  r="1.49386" stroke-width="0.72000003" id="connector2pin" gorn="0.3.1.0.0.0.2" cx="3.888" cy="11.088" fill="none" stroke="#f7bd13"/>
+                        <circle  r="1.49386" stroke-width="0.72000003" id="connector3pin" gorn="0.3.1.0.0.0.3" cx="3.888" cy="18.288" fill="none" stroke="#f7bd13"/>
+                        <circle  r="1.49386" stroke-width="0.72000003" id="connector4pin" gorn="0.3.1.0.0.0.4" cx="3.888" cy="25.488001" fill="none" stroke="#f7bd13"/>
+                        <circle  r="1.49386" stroke-width="0.72000003" id="connector5pin" gorn="0.3.1.0.0.0.5" cx="3.888" cy="32.688" fill="none" stroke="#f7bd13"/>
+                        <circle  r="1.49386" stroke-width="0.72000003" id="connector6pin" gorn="0.3.1.0.0.0.6" cx="3.888" cy="39.888" fill="none" stroke="#f7bd13"/>
+                        <g  transform="translate(3.5611923e-7,7.2000016)">
+                            <g >
+                                <circle  r="1.49386" stroke-width="0.72000003" id="connector7pin" gorn="0.3.1.0.0.0.7.0.0" cx="3.888" cy="39.888" fill="none" stroke="#f7bd13"/>
+                            </g>
+                        </g>
+                        <g  transform="translate(3.5611923e-7,14.400002)">
+                            <g >
+                                <circle  r="1.49386" stroke-width="0.72000003" id="connector8pin" gorn="0.3.1.0.0.0.8.0.0" cx="3.888" cy="39.888" fill="none" stroke="#f7bd13"/>
+                            </g>
+                        </g>
+                        <g  transform="translate(3.5611923e-7,21.600002)">
+                            <g >
+                                <circle  r="1.49386" stroke-width="0.72000003" id="connector9pin" gorn="0.3.1.0.0.0.9.0.0" cx="3.888" cy="39.888" fill="none" stroke="#f7bd13"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
