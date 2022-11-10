@@ -21,10 +21,9 @@
 #include <LiquidCrystal_I2C.h>
 // set MyDisplay address to 0x27 for a 16 chars 2 line display
 
-LiquidCrystal_I2C MyDisplay(0x27, 2, 1, 0, 4, 5, 6, 7, 3, POSITIVE);  // Set the MyDisplay I2C address
+LiquidCrystal_I2C MyDisplay(0x27, 16, 2);  // Set the MyDisplay I2C address
 
 void setup() {
-  MyDisplay.begin(16, 2);
   MyDisplay.begin(16, 2);             // set up the MyDisplay's number of columns and rows:
   MyDisplay.print("Hello World!!");   // Print a message to the MyDisplay.
   MyDisplay.clear();

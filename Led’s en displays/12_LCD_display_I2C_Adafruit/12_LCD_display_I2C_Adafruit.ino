@@ -23,6 +23,9 @@
 Adafruit_LiquidCrystal MyDisplay(0);
 
 void setup() {
+  Serial.begin(9600);
+  Serial.println("Start");
+  
   MyDisplay.begin(16, 2);
   MyDisplay.begin(16, 2);   // set up the lcd's number of columns and rows:
   MyDisplay.print("Hello World!!");   // Print a message to the LCD.
@@ -37,6 +40,7 @@ void loop() {
   for (int k = 0; k <= 10; k++) {
     MyDisplay.setCursor(0, 1);
     MyDisplay.print(k);
+    Serial.println(k);
     delay(500);
   }
   delay(1000);

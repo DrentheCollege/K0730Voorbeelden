@@ -1,14 +1,14 @@
 const int LeftbuttonPin = 2;
 const int RightbuttonPin = 3;
 const int RedledPin   =  7;
-const int GreenledPin =  8;
+const int YellowledPin =  8;
 
 int LeftbuttonState = 0;
 int RightbuttonState = 0;
 
 void setup() {
   pinMode(RedledPin,   OUTPUT);
-  pinMode(GreenledPin, OUTPUT);
+  pinMode(YellowledPin, OUTPUT);
   pinMode(LeftbuttonPin,  INPUT_PULLUP);
   pinMode(RightbuttonPin, INPUT_PULLUP);
 }
@@ -23,9 +23,9 @@ void loop() {
     digitalWrite(RedledPin, LOW);
   }
   if (RightbuttonState == LOW) {
-    digitalWrite(GreenledPin, HIGH);
+    digitalWrite(YellowledPin, HIGH);
   } else {
-    digitalWrite(GreenledPin, LOW);
+    digitalWrite(YellowledPin, LOW);
   }
 }
 
