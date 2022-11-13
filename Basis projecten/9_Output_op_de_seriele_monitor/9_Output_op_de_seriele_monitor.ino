@@ -1,5 +1,5 @@
 int buttonPin = 2;     // the number of the pushbutton pin
-int ledPin =  13;      // the number of the LED pin
+int ledPin =  12;      // the number of the LED pin
 int buttonState = 1;   // variable for reading the pushbutton status
 
 void setup() {
