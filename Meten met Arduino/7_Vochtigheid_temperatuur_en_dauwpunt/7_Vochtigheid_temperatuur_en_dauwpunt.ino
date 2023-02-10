@@ -1,20 +1,25 @@
 #include <Wire.h>
-#include <dht11.h>
-#include <LiquidCrystal_I2C.h>
+#include <DHT.h>
+#include <LiquidCrystal_PCF8574.h>
 
-LiquidCrystal_I2C lcd(0x27, 2, 1, 0, 4, 5, 6, 7, 3, POSITIVE);  // Set the LCD I2C address
-dht11 DHT11sensor;
+int dhtPin = 2;
+
+LiquidCrystal_PCF8574 MyDisplay(0x27);  // Set the MyDisplay I2C address
+DHT DHT11sensor(dhtPin, DHT11);
 
 const int Measure_Period = 2000;          // Update measurement every 2000 msec.
 unsigned long time_to_Measure = 0;
 int meetwaarde = 2;
+float temperatuur;
+float vochtigheid;
 
 void setup() {
   Serial.begin(9600);
-  lcd.begin(16, 2);
-  lcd.print("DHT11 sensor: ");
-  lcd.setCursor(0, 0);
-  DHT11sensor.attach(2); // DHT11 met -, + en data
+  MyDisplay.begin(16, 2);
+  MyDisplay.setBacklight(255);
+  MyDisplay.print("DHT11 sensor: ");
+  MyDisplay.setCursor(0, 0);
+  DHT11sensor.begin();
 }
 
 void loop() {
@@ -26,32 +31,35 @@ void DHT11_Meting() {
     meetwaarde = (meetwaarde + 1) % 3;
     if (meetwaarde == 0)  {
       int chk = DHT11sensor.read();
-      lcd.clear();
-      lcd.setCursor(0, 0);
-      lcd.print("Vochtigheit:       ");
-      lcd.setCursor(0, 1);
-      lcd.print((float)DHT11sensor.humidity, 0);
-      lcd.print(" %");
+      MyDisplay.clear();
+      MyDisplay.setCursor(0, 0);
+      MyDisplay.print("Vochtigheit:       ");
+      MyDisplay.setCursor(0, 1);
+      vochtigheid = DHT11sensor.readHumidity();
+      MyDisplay.print((float) vochtigheid, 0);
+      MyDisplay.print(" %");
     }
     if (meetwaarde == 1)  {
-      lcd.clear();
-      lcd.setCursor(0, 0);
-      lcd.print("Temperatuur:    ");
-      lcd.setCursor(0, 1);
-      lcd.print((float)DHT11sensor.temperature,1);
-      lcd.print(" ");
-      lcd.print(char(223));
-      lcd.print("C");
+      MyDisplay.clear();
+      MyDisplay.setCursor(0, 0);
+      MyDisplay.print("Temperatuur:    ");
+      MyDisplay.setCursor(0, 1);
+      temperatuur = DHT11sensor.readTemperature();
+      MyDisplay.print((float) temperatuur,1);
+      MyDisplay.print(" ");
+      MyDisplay.print(char(223));
+      MyDisplay.print("C");
     }
     if (meetwaarde == 2)  {
-      lcd.clear();
-      lcd.setCursor(0, 0);
-      lcd.print("Dauwpunt:       ");
-      lcd.setCursor(0, 1);
-      lcd.print((float)DHT11sensor.dewPoint(), 2);
-      lcd.print(" ");
-      lcd.print(char(223));
-      lcd.print("C");
+      MyDisplay.clear();
+      MyDisplay.setCursor(0, 0);
+      MyDisplay.print("Hitte Index:       ");
+      MyDisplay.setCursor(0, 1);
+      float hitteIndex = DHT11sensor.computeHeatIndex(temperatuur, vochtigheid, false);
+      MyDisplay.print((float) hitteIndex, 2);
+      MyDisplay.print(" ");
+      MyDisplay.print(char(223));
+      MyDisplay.print("C");
     }
     time_to_Measure = millis();
   }

@@ -1,9 +1,9 @@
 // Hobbyelectronica Backpack shield
 
 #include <Wire.h>
-#include <LiquidCrystal_I2C.h>
+#include <LiquidCrystal_PCF8574.h>
 
-LiquidCrystal_I2C MyDisplay(0x27, 2, 1, 0, 4, 5, 6, 7, 3, POSITIVE);  // Set the MyDisplay I2C address
+LiquidCrystal_PCF8574 MyDisplay(0x27);  // Set the MyDisplay I2C address
 
 int SensorPin = A0;       // Input van de potmeter
 int meetwaarde = 0;       // Een spanning, te meten op A0

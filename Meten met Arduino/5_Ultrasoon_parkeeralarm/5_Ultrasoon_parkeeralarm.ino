@@ -18,8 +18,8 @@ unsigned long BeeperLasttime = 0;
 
 // Declaraties voor het I2C display
 #include <Wire.h>
-#include <LiquidCrystal_I2C.h>
-LiquidCrystal_I2C MyDisplay(0x27, 2, 1, 0, 4, 5, 6, 7, 3, POSITIVE);  // Set the LCD I2C address
+#include <LiquidCrystal_PCF8574.h>
+LiquidCrystal_PCF8574 MyDisplay(0x27);  // Set the MyDisplay I2C address
 const int Display_Period = 500; // Update display every 500 msec
 unsigned long time_to_Display = 0;
 

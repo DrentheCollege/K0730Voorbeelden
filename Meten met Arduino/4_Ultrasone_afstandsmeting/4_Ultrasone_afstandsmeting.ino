@@ -10,10 +10,9 @@ const int Measure_Period = 500;          // Update measurement every 500 msec. 2
 unsigned long time_to_Measure = 0;
 
 #include <Wire.h>
-#include <LiquidCrystal_I2C.h>
+#include <LiquidCrystal_PCF8574.h>
 
-LiquidCrystal_I2C MyDisplay(0x27, 2, 1, 0, 4, 5, 6, 7, 3, POSITIVE);  // Set the LCD I2C address
-
+LiquidCrystal_PCF8574 MyDisplay(0x27);  // Set the MyDisplay I2C address
 
 void setup() {
   MyDisplay.begin(16, 2);
