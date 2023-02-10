@@ -1,5 +1,5 @@
 #include "LedControl.h"
-int NRDEV = 4;
+int NRDEV = 2;
 int displayteller = 0;
 
 LedControl MyLedmatrix = LedControl(11, 13, 10, NRDEV); // DIN, CLK, CS, NRDEV
@@ -15,7 +15,7 @@ void setup(){
   Serial.begin(9600);
   for (int i = 0; i <= NRDEV; i++) {
     MyLedmatrix.shutdown(i, false);       // De MAX72XX IC is in slaapstand modus bij opstarten.
-    MyLedmatrix.setIntensity(i, 8);       // Zet de helderheid op een medium niveau.
+    MyLedmatrix.setIntensity(i, 5);       // Zet de helderheid op een medium niveau.
     MyLedmatrix.clearDisplay(i);          // Maak de dot matrix leeg (clear display).
   }
 }

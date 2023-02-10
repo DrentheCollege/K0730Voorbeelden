@@ -1,5 +1,5 @@
-// Adafruit Backpack shield
-// 5V to Arduino 5V pin, GND to Arduino GND pin, CLK to Analog #5 (Geel), DAT to Analog #4 (Oranje)
+// Hobbyelectronica Backpack shield
+//  https://www.hobbyelectronica.nl/product/i2c-lcd-interface-voor-16x2-en-20x4-displays/
 
 /*
   De LiquidCrystal library kent de volgende commando's:
@@ -17,18 +17,16 @@
   void noAutoscroll();
 */
 
-#include "Wire.h"  // include the library code:
-#include "Adafruit_LiquidCrystal.h"
+#include <Wire.h>
+#include <LiquidCrystal_PCF8574.h>
+// set MyDisplay address to 0x27 for a 16 chars 2 line display
 
-Adafruit_LiquidCrystal MyDisplay(0);
+LiquidCrystal_PCF8574 MyDisplay(0x27);  // Set the MyDisplay I2C address
 
 void setup() {
-  Serial.begin(9600);
-  Serial.println("Start");
-  
-  MyDisplay.begin(16, 2);
-  MyDisplay.begin(16, 2);   // set up the lcd's number of columns and rows:
-  MyDisplay.print("Hello World!!");   // Print a message to the LCD.
+  MyDisplay.begin(16, 2);             // set up the MyDisplay's number of columns and rows:
+  MyDisplay.setBacklight(255);
+  MyDisplay.print("Hello World!!");   // Print a message to the MyDisplay.
   MyDisplay.clear();
 }
 
@@ -40,7 +38,6 @@ void loop() {
   for (int k = 0; k <= 10; k++) {
     MyDisplay.setCursor(0, 1);
     MyDisplay.print(k);
-    Serial.println(k);
     delay(500);
   }
   delay(1000);
@@ -58,9 +55,8 @@ void loop() {
   MyDisplay.print("Left and right scrolling");
   delay(500); // Naar links scrollen
   for (int k = 0; k <= 23; k++) {
-    MyDisplay.scrollDisplayLeft();          //Elke keer dat dit wordt gebruikt springt de tekst één positie naar links.
-    //     MyDisplay.scrollDisplayRight();  //Elke keer dat dit wordt gebruikt springt de tekst één positie naar rechts.
-    delay(200);
+    MyDisplay.scrollDisplayLeft(); //Elke keer dat dit wordt gebruikt springt de tekst één positie naar links.
+    delay(400);
   }
   delay(500); // Nu naar rechts scrollen
   for (int k = 0; k <= 23; k++) {
