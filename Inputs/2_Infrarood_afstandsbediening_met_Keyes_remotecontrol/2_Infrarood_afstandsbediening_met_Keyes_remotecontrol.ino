@@ -1,11 +1,9 @@
-//Een Infrarood afstandsbediening met een ‘Keyes’ afstandsbediening
+//Een Infrarood afstandsbediening
 
-/*Losse IR fotodiode frontaal (op bolle ontvangstkant gezien van links naar rechts Data Vcc Gnd! Let op: dat is anders dan de sepcificaties!
-   Bij Vcc en Gnd andersom wordt deze fotodiode heel heet!!
-  KEYES IR afstandsbediening.
+/*KEYES IR afstandsbediening.
 */
 
-#include <IRremote.h>
+#include <IRremote.hpp>
 
 const int RECV_PIN = 7; // the pin where you connect the output pin of TSOP4838
 
@@ -28,22 +26,17 @@ const int RECV_PIN = 7; // the pin where you connect the output pin of TSOP4838
 #define KEYES_0 0xFF4AB5
 #define KEYES_Hekje 0xFF52AD
 
-unsigned int value;
-
-IRrecv irrecv(RECV_PIN);
-decode_results results;
-
 
 void setup()
 {
   Serial.begin(9600);   // you can comment this line
   Serial.println("Start IR ontvangst");
-  irrecv.enableIRIn();  // Start the receiver
+  IrReceiver.begin(RECV_PIN, DISABLE_LED_FEEDBACK);  // Start the receiver
 }
 
 void loop() {
-  if (irrecv.decode(&results)) {
-    unsigned int value = results.value;
+  if (IrReceiver.decode()) {
+    unsigned int value = IrReceiver.decodedIRData.decodedRawData;
     switch (value) {
       case (KEYES_Up):
         Serial.println("KEYESRemote Up");
@@ -96,7 +89,11 @@ void loop() {
       case KEYES_Hekje:
         Serial.println("KEYESRemote #");
         break;
+      default: // Als de toets of de afstandsbediening onbekend is
+        Serial.print("Unknown key: ");
+        Serial.println(value);
+        break;
     }
-    irrecv.resume(); // Receive the next value
+    IrReceiver.resume(); // Receive the next value
   }
 }
