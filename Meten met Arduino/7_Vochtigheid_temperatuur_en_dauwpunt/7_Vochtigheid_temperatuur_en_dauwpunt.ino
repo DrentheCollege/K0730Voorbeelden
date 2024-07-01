@@ -33,7 +33,7 @@ void DHT11_Meting() {
       int chk = DHT11sensor.read();
       MyDisplay.clear();
       MyDisplay.setCursor(0, 0);
-      MyDisplay.print("Vochtigheit:       ");
+      MyDisplay.print("Vochtigheid:       ");
       MyDisplay.setCursor(0, 1);
       vochtigheid = DHT11sensor.readHumidity();
       MyDisplay.print((float) vochtigheid, 0);
