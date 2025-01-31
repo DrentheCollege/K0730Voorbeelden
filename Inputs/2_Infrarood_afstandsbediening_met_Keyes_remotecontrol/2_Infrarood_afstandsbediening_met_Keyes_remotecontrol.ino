@@ -13,17 +13,17 @@ const int RECV_PIN = 7; // the pin where you connect the output pin of TSOP4838
 #define KEYES_Ok 0xFF02FD
 #define KEYES_Right 0xFFC23D
 #define KEYES_Down 0xFFA857
-#define KEYES_1 0xFF6897
-#define KEYES_2 0xFF9867
-#define KEYES_3 0xFFB04F
-#define KEYES_4 0xFF30CF
-#define KEYES_5 0xFF18E7
-#define KEYES_6 0xFF7A85
-#define KEYES_7 0xFF10EF
-#define KEYES_8 0xFF38C7
-#define KEYES_9 0xFF5AA5
+#define KEYES_1 12
+#define KEYES_2 24
+#define KEYES_3 94
+#define KEYES_4 8
+#define KEYES_5 28
+#define KEYES_6 90
+#define KEYES_7 66
+#define KEYES_8 82
+#define KEYES_9 74
 #define KEYES_Asterix 0xFF42BD
-#define KEYES_0 0xFF4AB5
+#define KEYES_0 22
 #define KEYES_Hekje 0xFF52AD
 
 
@@ -36,7 +36,8 @@ void setup()
 
 void loop() {
   if (IrReceiver.decode()) {
-    unsigned int value = IrReceiver.decodedIRData.decodedRawData;
+    // unsigned int value = IrReceiver.decodedIRData.decodedRawData;
+    unsigned int value = IrReceiver.decodedIRData.command;
     switch (value) {
       case (KEYES_Up):
         Serial.println("KEYESRemote Up");
